@@ -48,3 +48,20 @@ INSERT INTO turmas (prof_responsavel) VALUES
 ('Professora Laura Mendes Costa'),
 ('Professor André Ferreira Lima'),
 ('Professora Patrícia Rodrigues Almeida');
+
+SELECT * FROM alunos, turmas, cursos
+
+INSERT INTO alunos_turmas VALUES
+(1,2), (2,1), (3,3), (4,1), (5,3), (6,5), (7,3), (8,5), (9,4), (10,1);
+
+
+--a)
+SELECT nome_aluno FROM alunos INNER JOIN turmas
+ON alunos.id_matricula = turmas.id_turma WHERE prof_responsavel = 'Professora Ana Maria Oliveira'
+
+--b)
+SELECT nome_curso FROM cursos INNER JOIN alunos
+ON alunos.id_matricula = cursos.id_curso WHERE id_matricula = '5'
+
+--c)
+SELECT * FROM alunos NATURAL INNER JOIN products
