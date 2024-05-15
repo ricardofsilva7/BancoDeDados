@@ -1,10 +1,3 @@
-*ALUNOS*
--ID ALUNO
--CPF
--NOME
--ENDEREÇO
--CONTATO (FK): Criar uma tabela somente para contato.
-
 
 ATIVIDADE CLASSROM
 
